@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.Bulletins{
+    display:flex ;
+    flex-direction: column;
+}
+
+
+.Bulletins{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 25%;
+    margin-left:25%;
+
+}
+
+.Hidden{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+
+.NotHidden{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.download img{
+    width: 20px;
+    margin: 6px;
+}
+
+.download a{
+    align-self: center;
+    
+}
+
+.DownChoice{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: solid;
+}
+.SelectionLine {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: auto auto;
+    border: solid;
+   
+}
+
+.SelectionLine:hover {
+    animation: hoverSchool 3s forwards ;
+    
+   
+}
+
+@keyframes hoverSchool {
+    from{background-color: aliceblue;}
+    to{background-color: rgb(184, 85, 154); color:white;border-color: black;}
+    
+}
+
+.SelectionLine > h2{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.SelectionLine > img{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.SelectionLine > .Hidden{
+    grid-column: 1/span 3;
+    grid-row: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.SelectionLine > img{
+    width: 40px;
+}

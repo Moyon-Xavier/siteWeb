@@ -1,0 +1,239 @@
+.projectContainer{
+    display: flexbox;
+    flex-direction: column;
+    /*text-align: center;*/
+    border-bottom:solid;
+    border-color:gray;
+    margin: 30px;
+    padding: 30px;
+}
+
+
+
+.projectContainer>.header{
+    text-align: center;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
+.projectContainer:hover{
+    animation-name: zoomText;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes zoomText{
+    from{font-size: medium;}
+    to{font-size: larger;}
+    
+
+    
+}
+
+
+
+
+.inline{
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+       
+    
+    
+}
+
+.header{
+    
+    color: crimson;
+}
+
+
+.inline>img{
+    width: 300px;
+    height: 180px;
+    padding: 30px;
+    
+}
+
+.inline>img:hover{
+    
+    animation-name: ClickOnImg;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes ClickOnImg{
+    from{width: 300px;height: 180px;}
+    to{width: 360px;height: 220px;}
+    
+
+}
+
+.inlineCapacity{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.active{
+    background-color: rgb(14, 14, 55);
+}
+
+.Year{
+    display: grid;
+    gap :10px;
+    padding: 10px;
+}
+
+
+.gridItem{
+    
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.SelectButP ul{
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.SelectButP ul li{
+    float:left;
+}
+.SelectButP ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.SelectButP ul li a:hover{
+    background-color: #555;
+    color: white;
+}
+.Head{
+    
+    grid-column:1 /span 6;
+    grid-row: 1/span 1 ;
+}
+
+.SelectButP{
+    margin: 0;
+    padding: 0;
+    grid-column: 2 /span 4;
+    grid-row: 2/span 1;
+}
+
+
+
+.ButProject{
+    
+    grid-column: 1/span 6;
+    grid-row:3 /span 3;
+
+}
+.exemple ul li{
+
+    list-style-type: none;
+    /*text-align: center;*/
+   
+
+}
+.inlineCapacity{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap :10px;
+    padding: 10px;
+}
+/*.Competences{
+    grid-column: 1/span 1;
+    
+}
+
+.PointsForts{
+    grid-column: 1/span 1;
+    
+}*/
+
+
+
+.exemple:hover{
+    animation-name: ClickOnExemple;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+}
+
+
+
+@keyframes ClickOnExemple{
+    from{ background-color: #ffffff;}
+    to{font-size: larger; background-color: rgba(125, 164, 125, 0.742);}
+    
+
+}
+
+
+
+.gitLink{
+    background-color: #333;
+    color:#ffffff;
+    border-color: black;
+    border: solid;
+    border-radius: 80;
+    height: 30px;
+    
+    
+    
+}
+.gitLink:hover{
+    background-color: #555;
+    color: white;
+    border-color: black;
+    animation-name: ClickOngitButton;
+    animation-duration: 8s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+@keyframes ClickOngitButton{
+    0% {background-color: aqua;color: #000000;border-color: black;}
+    15% {background-color: rgb(12, 60, 91);color: #ffffff;border-color: black;}
+    30% {background-color: rgb(123, 74, 167);color: #ffffff;border-color: black;}
+    45% {background-color: rgb(41, 168, 136);color:rgb(0, 0, 0)37;border-color: black;}
+    60% {background-color: rgb(0, 0, 0);color: #ffffff;border-color: black;}
+    75% {background-color: rgb(255, 247, 0);color: #000000;border-color: black;}
+    90% {background-color: rgba(255, 0, 0, 0.539);color: #ffffff;border-color: black;}
+    100% {background-color: rgba(0, 255, 55, 0.491);color: #000000;border-color: black;}
+}
+
+.gitLink:visited{
+    color: white;
+}
+
+
+
+
+
+
+

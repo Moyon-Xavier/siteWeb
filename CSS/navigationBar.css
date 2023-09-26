@@ -1,0 +1,37 @@
+body nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    
+}
+
+body nav ul li {
+    float: left;
+}
+
+body nav ul li a{
+    display: block;
+    color:#ffffff;
+   /*width: 60px;*/
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+
+body nav ul li a:visited{
+    color: #ffffff;
+}
+body nav ul li a:hover:not(.active){
+    background-color: #111;
+    color: white;
+}
+
+body nav ul li a:hover{
+    background-color: rgba(14, 14, 55, 0.397);
+    color: white;
+}
