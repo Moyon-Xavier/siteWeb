@@ -2,7 +2,8 @@
     max-width: 200px;
     padding: 30px;
 }
-.quota{
+
+.quota {
     border-top: solid;
     border-bottom: solid;
     display: flex;
@@ -15,39 +16,49 @@
 }
 
 
-.MyProfile{
+.MyProfile {
     grid-column: 1/span 1;
-    
+
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    
+
 }
-.MyProfile:hover{
+
+.MyProfile:hover {
     animation: onProfile;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-@keyframes onProfile{
-    from{background-color:white;font-size:medium;}
-    to{background-color: rgba(112, 177, 112, 0.9);font-size: large;}
+
+@keyframes onProfile {
+    from {
+        background-color: white;
+        font-size: medium;
+    }
+
+    to {
+        background-color: rgba(112, 177, 112, 0.9);
+        font-size: large;
+    }
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
-.IdentityCard{
-    padding:30px;
+.IdentityCard {
+    padding: 30px;
     margin: 30px;
     display: flex;
     flex-direction: column;
 }
 
-.Quality{
+.Quality {
     grid-column: 2/span 1;
     display: flex;
     flex-direction: column;
@@ -59,52 +70,52 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 
 
-.Quality:hover{
+.Quality:hover {
     animation: onProfile;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
-.AboutMe{
+.AboutMe {
     display: flex;
     flex-direction: column;
-    align-items:center;
-               
-    
+    align-items: center;
+
+
 }
 
-.AboutMeHead{
+.AboutMeHead {
     grid-column: 2/span 1;
     grid-row: 1 /span 1;
 }
 
-.PictureAndId{
+.PictureAndId {
     display: flex;
     flex-direction: row;
 }
 
-.All{
+.All {
     grid-column: 1/span 3;
     grid-row: 2/span 1;
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
-    
-    
+
+
 }
 
-.Competences{
+.Competences {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.TwoByTwo{
+.TwoByTwo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -114,33 +125,43 @@ body{
 }
 
 .C {
-    
+
     width: 100%;
     padding: 20px;
-    
+
 }
 
-.C:hover{
+.C:hover {
     animation: SkillsAnimation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes SkillsAnimation {
-    from{font-size: medium;background-color: aliceblue;color:rgb(0, 0, 0)}
-    to{font-size: larger; background-color: black;color:white}
+    from {
+        font-size: medium;
+        background-color: aliceblue;
+        color: rgb(0, 0, 0)
+    }
+
+    to {
+        font-size: larger;
+        background-color: black;
+        color: white
+    }
 }
 
-.Conteneur{
+.Conteneur {
     background-color: #ddd;
     width: 100%;
 }
 
-.HTML{
-    width: 80%; background-color: #04AA6D;
+.HTML {
+    width: 60%;
+    background-color: #04AA6D;
 }
 
-.Compe{
+.Compe {
     text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -148,71 +169,76 @@ body{
 
 }
 
-.CSS{
-    width: 75%; background-color: #ce0909;
+.CSS {
+    width: 45%;
+    background-color: #ce0909;
 }
 
-.SQL{
-    width: 60%; background-color: #3514b0;
+.SQL {
+    width: 50%;
+    background-color: #3514b0;
 }
 
-.JAVASCRIPT{
-    
-    width: 20%; background-color: #ff9a01;
-    
+.JAVASCRIPT {
+
+    width: 20%;
+    background-color: #ff9a01;
+
 }
 
-.PYTHON{
-    width: 75%;
+.PYTHON {
+    width: 45%;
     background-color: rgb(50, 134, 155);
 }
 
-.JAVA{
-    width: 65%;
+.JAVA {
+    width: 55%;
     background-color: rgb(252, 9, 199);
 }
 
 
-.SCRATCH{
+.SCRATCH {
     width: 100%;
     background-color: rgb(216, 140, 140);
 }
 
-.BASH{
-    width: 50%;
+.BASH {
+    width: 35%;
     background-color: rgb(84, 13, 112);
 }
 
-.appear{
+.appear {
     padding: 10px;
     display: none;
 }
 
-.C:hover .appear{
+.C:hover .appear {
     display: block;
 }
 
-.appearScratch{
-    
+.appearScratch {
+
     display: none;
 }
 
-.C:hover .appearScratch{
-    display:initial;
-    
+.C:hover .appearScratch {
+    display: initial;
+
 }
 
-.C:hover .Compe{
+.C:hover .Compe {
     animation: AjustSize;
     animation-duration: 4s;
-    
+
 }
 
 @keyframes AjustSize {
-    from{width:0%;}
-    
+    from {
+        width: 0%;
+    }
+
 }
 
-a:visited{
+a:visited {
     color: unset;
 }
