@@ -1,51 +1,55 @@
-.Selection{
+.Selection {
     background-color: rgb(14, 14, 55);
     color: rgb(255, 255, 255);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
+    width: initial;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    
+
 
 }
 
-.Selection h1{
+.Selection h1 {
     grid-column: 3 /span 1;
     align-items: center;
     text-align: center;
 }
-.Selection img{
+
+.Selection img {
     max-width: 40px;
     grid-column: 1/span 1;
 }
+
 .HiddenMenu {
     display: none;
     position: absolute;
     color: black;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.MenuSelect{
+.MenuSelect {
     position: relative;
     display: inline;
-    
+
 }
 
 
 
-.HiddenMenu a{
-    color:black;
+.HiddenMenu a {
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    
+
 }
 
-.HiddenMenu a:hover {background-color: #f1f1f1}
+.HiddenMenu a:hover {
+    background-color: #f1f1f1
+}
 
-.MenuSelect:hover .HiddenMenu{
+.MenuSelect:hover .HiddenMenu {
     display: block;
 }
-
