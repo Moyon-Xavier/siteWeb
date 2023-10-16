@@ -3,6 +3,19 @@
     padding: 30px;
 }
 
+.AboutMe {
+    background-color: black;
+    color: white;
+}
+
+.AboutMeHead {
+    width: 100%;
+    margin: 0%;
+    padding: 1%;
+    background-color: rgba(110, 106, 106, 0.61);
+    text-align: center;
+}
+
 .quota {
     border-top: solid;
     border-bottom: solid;
@@ -13,6 +26,8 @@
     width: 100%;
     padding-bottom: 30px;
     font-size: large;
+    background-color: rgb(6, 14, 35);
+    ;
 }
 
 
@@ -20,11 +35,11 @@
     grid-column: 1/span 1;
 
     padding: 0;
-    margin: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -36,13 +51,14 @@
 
 @keyframes onProfile {
     from {
-        background-color: white;
-        font-size: medium;
+        background-color: rgb(0, 0, 0);
+
     }
 
     to {
-        background-color: rgba(112, 177, 112, 0.9);
-        font-size: large;
+        background-color: rgba(39, 13, 37, 0.9);
+
+        transform: scale(1.05);
     }
 }
 
@@ -105,9 +121,11 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
+    margin: 1.5%;
 
 
 }
+
 
 .Competences {
     display: flex;
@@ -127,7 +145,7 @@ body {
 .C {
 
     width: 100%;
-    padding: 20px;
+    padding: 2%;
 
 }
 
@@ -139,15 +157,16 @@ body {
 
 @keyframes SkillsAnimation {
     from {
-        font-size: medium;
-        background-color: aliceblue;
-        color: rgb(0, 0, 0)
+
+        background-color: rgb(42, 42, 42);
+        color: rgb(255, 255, 255)
     }
 
     to {
-        font-size: larger;
-        background-color: black;
-        color: white
+
+        background-color: rgb(0, 0, 0);
+        color: white;
+        transform: scale(1.05);
     }
 }
 
