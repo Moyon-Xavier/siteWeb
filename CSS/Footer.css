@@ -1,6 +1,6 @@
 footer img {
 
-    max-width: 45px;
+    width: 40px;
 }
 
 footer {
@@ -29,4 +29,42 @@ footer section {
     align-items: center;
     width: 100%;
 
+}
+
+@media only screen and (max-width: 800px) {
+    footer img {
+
+        max-width: 30px;
+
+    }
+
+    footer {
+        font-size: x-small;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(14, 14, 55);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer img {
+
+        max-width: 10px;
+
+    }
+
+    footer {
+        font-size: xx-small;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(14, 14, 55);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

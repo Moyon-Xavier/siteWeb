@@ -34,7 +34,7 @@
 
 .Passion img {
     width: 70%;
-    padding: 40%;
+    padding-bottom: 3%;
 }
 
 .Passion h2 {
@@ -103,7 +103,6 @@
     to {
         background-color: black;
         color: white;
-        display: block;
     }
 }
 
@@ -167,7 +166,7 @@
     to {
         background-color: rgb(227, 107, 2);
         colo: rgb(0, 0, 0);
-        display: block;
+
     }
 }
 
@@ -234,7 +233,7 @@
     to {
         background-color: rgb(34, 148, 255);
         color: rgb(200, 195, 47);
-        display: block;
+
     }
 }
 
@@ -1172,11 +1171,7 @@
 
 }
 
-p {
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 100%;
-}
+
 
 .Paris:hover {
     animation-name: Paris;
@@ -1219,7 +1214,6 @@ p {
 @media only screen and (max-width: 800px) {
 
     .Group {
-        color: cadetblue;
         display: flex;
         flex-direction: column;
         text-align: center;

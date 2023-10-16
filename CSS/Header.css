@@ -53,3 +53,11 @@
 .MenuSelect:hover .HiddenMenu {
     display: block;
 }
+
+@media only screen and (max-width: 800px) {
+    .Selection {
+        font-size: xx-small;
+
+
+    }
+}
