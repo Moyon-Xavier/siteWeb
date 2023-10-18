@@ -1,7 +1,10 @@
 .MyProfile img {
     max-width: 200px;
-    padding: 30px;
+    width: 70%;
+    padding: 15%;
 }
+
+
 
 .AboutMe {
     background-color: black;
@@ -9,12 +12,12 @@
 }
 
 .AboutMeHead {
-    width: 100%;
+    width: 98%;
     margin: 0%;
     padding: 1%;
-    background-color: #979797;
+    background-color: #171639;
     text-align: center;
-    color: #033799;
+    color: #3c8bbb;
 }
 
 .quota {
@@ -25,18 +28,18 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 5%;
     font-size: large;
     background-color: rgb(6, 14, 35);
-    ;
+
 }
 
 
 .MyProfile {
-    grid-column: 1/span 1;
+
 
     padding: 0;
-
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +63,7 @@
         background-color: #020445;
 
         transform: scale(1.05);
+
     }
 }
 
@@ -69,10 +73,11 @@ body {
 }
 
 .IdentityCard {
-    padding: 30px;
-    margin: 30px;
+    padding: 3%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .Quality {
@@ -106,22 +111,18 @@ body {
 
 }
 
-.AboutMeHead {
-    grid-column: 2/span 1;
-    grid-row: 1 /span 1;
-}
 
 .PictureAndId {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .All {
-    grid-column: 1/span 3;
-    grid-row: 2/span 1;
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 100%;
+    width: 97%;
     margin: 1.5%;
 
 
@@ -145,7 +146,7 @@ body {
 
 .C {
 
-    width: 100%;
+    width: 96%;
     padding: 2%;
 
 }
@@ -173,7 +174,8 @@ body {
 
 .Conteneur {
     background-color: #ddd;
-    width: 100%;
+    width: 90%;
+    margin: 2%;
 }
 
 .HTML {
@@ -232,24 +234,28 @@ body {
     display: none;
 }
 
-.C:hover .appear {
-    display: block;
-}
+
 
 .appearScratch {
 
     display: none;
 }
 
-.C:hover .appearScratch {
-    display: initial;
+@media only screen and (min-width: 800px) {
+    .C:hover .appear {
+        display: block;
+    }
 
-}
+    .C:hover .appearScratch {
+        display: initial;
 
-.C:hover .Compe {
-    animation: AjustSize;
-    animation-duration: 4s;
+    }
 
+    .C:hover .Compe {
+        animation: AjustSize;
+        animation-duration: 4s;
+
+    }
 }
 
 @keyframes AjustSize {
@@ -261,4 +267,62 @@ body {
 
 a:visited {
     color: unset;
+}
+
+@media only screen and (max-width: 800px) {
+    .MyProfile img {
+        max-width: 200px;
+        width: 70%;
+        height: 70%;
+        padding: 15%;
+    }
+
+    .All {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appear {
+        display: block;
+        font-size: xx-small;
+    }
+
+    .TwoByTwo {
+        flex-direction: column;
+    }
+
+    .C:hover {
+        animation: none;
+    }
+
+
+
+    .C:focus {
+
+        animation: SkillsAnimation;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
+    }
+
+    .PictureAndId {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MyProfile {
+
+
+        padding: 0;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+
+
 }
