@@ -35,21 +35,20 @@ footer section aside {
 }
 
 @media only screen and (max-width: 800px) {
-    footer img {
 
-        max-width: 30px;
+    footer section div {
+
+        display: flex;
+        flex-direction: row;
+
 
     }
 
-    footer {
-        font-size: x-small;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(14, 14, 55);
-        color: white;
+    footer section div div {
+
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+
 
     }
 }
@@ -61,8 +60,11 @@ footer section aside {
 
     }
 
-    footer {
-        font-size: medium;
+    footer section div {
+
+        display: flex;
+        flex-direction: column;
+
 
     }
 }
