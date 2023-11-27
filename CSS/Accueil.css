@@ -1,8 +1,10 @@
 .MyProfile img {
-    max-width: 200px;
-    width: 70%;
-    padding: 15%;
-    padding-bottom: 1%;
+    max-width: 300px;
+    width: 100%;
+    align-items: center;
+    min-width: 200px;
+
+
 
 }
 
@@ -12,7 +14,10 @@ ul {
     padding: 0%;
 }
 
-
+.All {
+    display: flex;
+    flex-direction: row;
+}
 
 
 
@@ -28,6 +33,10 @@ ul {
     background-color: #171639;
     text-align: center;
     color: #3c8bbb;
+}
+
+.Diplome section {
+    padding: 1%;
 }
 
 .quota {
@@ -46,7 +55,6 @@ ul {
 
 .MyProfile {
 
-
     padding: 0;
     width: 95%;
     margin: 2.5%;
@@ -55,6 +63,7 @@ ul {
     align-items: center;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    justify-content: center;
 }
 
 .MyProfile:hover {
@@ -91,10 +100,7 @@ body {
 }
 
 .myImagePlusQuote {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    width: 100%;
 }
 
 .myImagePlusQuote quote {
@@ -124,7 +130,7 @@ body {
 
 
 
-.Quality:hover {
+.IdentityCard:hover {
     animation: onProfile;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -146,20 +152,14 @@ body {
     justify-content: center;
 }
 
-.All {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 100%;
 
-
-
-}
 
 
 .Competences {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -275,6 +275,11 @@ body {
     display: none;
 }
 
+button {
+    padding: 2%;
+    margin: 10%;
+}
+
 @media only screen and (min-width: 800px) {
     .C:hover .appear {
         display: block;
@@ -299,19 +304,12 @@ body {
 
 }
 
-a:visited {
+button a {
     color: unset;
 }
 
-.Competences a {
-    color: #1acaff;
 
-}
 
-.Competences a:hover {
-    color: #1acaffa2;
-
-}
 
 @media only screen and (max-width: 800px) {
     .MyProfile img {
