@@ -11,6 +11,10 @@
 
 }
 
+body {
+    background-color: #000000;
+    color: #3c8bbb;
+}
 
 
 .projectContainer>.header {
@@ -39,7 +43,7 @@
     to {
         transform: scale(1.05);
         z-index: 2;
-        background-color: #ffffff;
+        background-color: #020445;
     }
 
 
@@ -62,7 +66,7 @@
 
 .header {
 
-    color: crimson;
+    color: #3c8bbb;
 }
 
 
@@ -114,7 +118,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3c8bbb;
 }
 
 .SelectButP ul li {
@@ -130,7 +134,7 @@ body {
 }
 
 .SelectButP ul li a:hover {
-    background-color: #555;
+    background-color: rgb(45, 97, 130);
     color: white;
 }
 
@@ -190,13 +194,11 @@ body {
 
 
 @keyframes ClickOnExemple {
-    from {
-        background-color: #ffffff;
-    }
+    from {}
 
     to {
+
         transform: scale(1.05);
-        background-color: rgba(125, 164, 125, 0.742);
     }
 
 
