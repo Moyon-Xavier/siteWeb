@@ -70,7 +70,7 @@
 
 .AM:hover {
     animation-name: AMA;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 
 
@@ -136,7 +136,7 @@
 
 .Muse:hover {
     animation-name: Muse;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 
 }
@@ -200,7 +200,7 @@
 
 .Brainless:hover {
     animation-name: Br;
-    animation-duration: 10s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 
 }
@@ -232,7 +232,7 @@
 
     to {
         background-color: rgb(34, 148, 255);
-        color: rgb(200, 195, 47);
+        color: rgb(255, 238, 0);
 
     }
 }
@@ -1131,7 +1131,7 @@
 
 .Creil:hover {
     animation-name: Creil;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 
 }
@@ -1153,7 +1153,7 @@
 
 .Lille:hover {
     animation-name: Lille;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -1175,7 +1175,7 @@
 
 .Paris:hover {
     animation-name: Paris;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 

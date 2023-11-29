@@ -9,6 +9,12 @@
 
 }
 
+
+.body {
+    background-color: #000000;
+    color: #cbcbcb;
+}
+
 .Selection h1 {
     grid-column: 3 /span 1;
     align-items: center;

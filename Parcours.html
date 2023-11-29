@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/Header.css">
     <link rel="stylesheet" href="./CSS/Parcours.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
@@ -30,66 +32,59 @@
     <h1>Parcours</h1>
 </header>
 
-<body>
+<body class="body">
     <section class="AllContent">
-        <aside class="SliderContainer">
-            <h3>Mon Parcours Jusqu'au BAC</h3>
 
-            <section class="slider">
-                <img src="./Photos/Parcours/colleges.jpg" class="box">
-                <section class="txt">
-                    <h4>Collège des Bourgognes</h4>
-                    <p>J'ai étudié au collège des Bourgognes à Chantilly.
-                        C'est d'ailleurs ici que j'ai découvert ma passion pour
-                        l'informatique. En dehors de l'informatique, je me suis impliqué dans
-                        la vie du collège, notamment en participant à deux clubs, le club journal
-                        ainsi que le club Théâtre, lors de ma dernière année. Nous avons d'ailleurs
-                        pu, avec toute la troupe, faire 3 représentations à Chantilly.
-
-                    </p>
-                </section>
-            </section>
-
-            <section class="slider">
-                <img src="./Photos/Parcours/Lycee.jpg">
-                <section class="txt">
-
-                    <h4>Lycée Général Et Technologique Marie Curie</h4>
-                    <p>J'ai effectué mes années de seconde, première et terminale
-                        au Lycée Général et Technologique de 2018 à 2021 et ai
-                        obtenu mon diplôme du Baccalauréat Général avec mention
-                        très bien.<br>
-                        Mes enseignements de Spécialités etaients :
-                    <ul>
-                        <li>Maths</li>
-                        <li>Numérique Science Informatique</li>
-                        <li>Maths Expertes</li>
-                    </ul>
-                    </p>
-
-                </section>
-
-            </section>
-
-
-
-
-            <section class="Bouton">
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-
-            </section>
-
-
-        </aside>
         <section class="postBac">
             <h1>Mon Parcours Post-Bac</h1>
             <aside class="Select">
                 <ul>
-                    <li><a href="#Esilv">ESILV / 2021-2021</a></li>
-                    <li><a href="#Au5v">AU5V / 2022-2022</a></li>
                     <li><a href="#But">BUT / 2022 - Maintenant</a></li>
+                    <li><a href="#Au5v">AU5V / 2022-2022</a></li>
+                    <li><a href="#Esilv">ESILV / 2021-2021</a></li>
                 </ul>
+            </aside>
+
+            <section class="bikeo BGbut">
+                <img class="BikeGif" src="./Photos/Parcours/bike.gif" alt="bike">
+            </section>
+            <aside id=But class="POST but">
+
+                <section class="txt">
+                    <h2>BUT</h2>
+                    <descript>Septembre 2022 - ...</descript>
+                    <p> À la fin de mon service civique j'ai commencé une nouvelle formation que je suis actuellement et
+                        qui me permet de
+                        développer mes compétences acquises en <abbr title="Numérique et Sciences 
+                            Informatiques">NSI</abbr>. L'iut apporte un apprentissage véritablement concret
+                        de par l'équilibre entre les cours théorique et pratique.
+                    </p>
+                </section>
+                <a href="https://www.iut-a.univ-lille.fr/" target="_blank"><img src="./Photos/Parcours/iut.png"></a>
+
+
+
+
+            </aside>
+            <section class="bikeo velo">
+
+                <img class="BikeGif" src="./Photos/Parcours/bike.gif" alt="bike">
+            </section>
+            <aside id=Au5v class="POST Au5v">
+                <a href="https://www.au5v.fr/" target="_blank"><img src="./Photos/Parcours/au5v.png"></a>
+                <section class="txt">
+                    <h2>AU5V</h2>
+                    <descript>Fevrier 2022 - Septembre 2022</descript>
+                    <p>Après avoir quitté l'ESILV, j'ai décidé de commencer un service civique au sein
+                        de l'AU5V. J'ai appris
+                        à être autonome et à prendre des décisions. J'ai notamment pu faire
+                        des présentations sur l'éco-mobilité avec ma collègue Harmonie (alternante)
+                        dans de nombreuses écoles primaires de l'Oise. Ce service civique m'a apporté
+                        beaucoup de choses dont plus de confiance en moi et d'assurance.
+                    </p>
+                </section>
+
+
 
 
             </aside>
@@ -113,84 +108,102 @@
                 <a href="https://www.esilv.fr/" target="_blank"><img src="./Photos/Parcours/ESILV.png"></a>
 
             </aside>
-
-            <section class="bikeo velo">
-
-                <img class="BikeGif" src="./Photos/Parcours/bike.gif" alt="bike">
-            </section>
-            <aside id=Au5v class="POST Au5v">
-                <a href="https://www.au5v.fr/" target="_blank"><img src="./Photos/Parcours/au5v.png"></a>
-                <section class="txt">
-                    <h2>AU5V</h2>
-                    <descript>Fevrier 2022 - Septembre 2022</descript>
-                    <p>Après avoir quitté l'ESILV, j'ai décidé de commencer un service civique au sein
-                        de l'AU5V. J'ai appris
-                        à être autonome et à prendre des décisions. J'ai notamment pu faire
-                        des présentations sur l'éco-mobilité avec ma collègue Harmonie (alternante)
-                        dans de nombreuses écoles primaires de l'Oise. Ce service civique m'a apporté
-                        beaucoup de choses dont plus de confiance en moi et d'assurance.
-                    </p>
-                </section>
-
-
-
-
-            </aside>
-            <section class="bikeo BGbut">
-                <img class="BikeGif" src="./Photos/Parcours/bike.gif" alt="bike">
-            </section>
-            <aside id=But class="POST but">
-
-                <section class="txt">
-                    <h2>BUT</h2>
-                    <descript>Septembre 2022 - ...</descript>
-                    <p> À la fin de mon service civique j'ai commencé une nouvelle formation que je suis actuellement et qui me permet de 
-                        développer mes compétences acquises en <abbr title="Numérique et Sciences 
-                            Informatiques">NSI</abbr>. L'iut apporte un apprentissage véritablement concret
-                        de par l'équilibre entre les cours théorique et pratique.
-                    </p>
-                </section>
-                <a href="https://www.iut-a.univ-lille.fr/" target="_blank"><img src="./Photos/Parcours/iut.png"></a>
-
-
-
-
-            </aside>
         </section>
-        <script>
+        <h3>Mon Parcours Jusqu'au BAC</h3>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./Photos/Parcours/Lycee.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lycée Général Et Technologique Marie Curie</h5>
+                    <p class="card-text">J'ai effectué mes années de seconde, première et terminale
+                        au Lycée Général et Technologique de 2018 à 2021 et ai
+                        obtenu mon diplôme du Baccalauréat Général avec mention
+                        très bien.<br>
+                        Mes enseignements de Spécialités etaients :
+                    <ul>
+                        <li>Maths</li>
+                        <li>Numérique Science Informatique</li>
+                        <li>Maths Expertes</li>
+                    </ul>
 
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Photos/Parcours/colleges.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Collège des Bourgognes</h5>
+                    <p class="card-text">J'ai étudié au collège des Bourgognes à Chantilly.
+                        C'est d'ailleurs ici que j'ai découvert ma passion pour
+                        l'informatique. En dehors de l'informatique, je me suis impliqué dans
+                        la vie du collège, notamment en participant à deux clubs, le club journal
+                        ainsi que le club Théâtre, lors de ma dernière année. Nous avons d'ailleurs
+                        pu, avec toute la troupe, faire 3 représentations à Chantilly.
 
-            var slideIndex = 1;
-            showDivs(slideIndex);
+                    </p>
 
-            function plusDivs(n) { showDivs(slideIndex += n); }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("slider");
-                if (n > x.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = x.length };
-                for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
-                x[slideIndex - 1].style.display = "block";
-
-            }
-
-
-
-
-        </script>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer id="Footer">
-        <p>Xavier Moyon - CV</p>
-        <section>
-            <aside>
-                <a
-                    href="mailto:moyonxavier@gmail.com?Subject=Renseignements au sujet de votre CV&body= Bonjour, je vous contacte car je viens de regarder votre CV en ligne..."><img
-                        src="./Photos/Footer/Social NetWork/mail.png" alt="mail"></a>
-                <a href="https://www.linkedin.com/in/xavier-moyon-153360254/"><img
-                        src="./Photos/Footer/Social NetWork/linkedin.png" alt="Linkedin"></a>
-            </aside>
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4" style="background-color: rgb(6, 14, 35)">
+            <!-- Left -->
+            <div class="me-5">
+                <h3>Pour me contacter</h3>
+            </div>
         </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">Xavier Moyon</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Je vous remercie pour l'attention que vous avez portée a l'égard de mon CV</p>
+                    </div>
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> Lille 59800</p>
+                        <p><i class="fas fa-envelope mr-3"></i> moyonxavier@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> 06 95 24 47 24</p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Mes réseaux</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i><a
+                                href="https://www.linkedin.com/in/xavier-moyon-153360254/">Linkedin</a></p>
+                        <p><i class="fas fa-phone mr-3"></i><a href="https://github.com/Moyon-Xavier">GitHub</i></a></p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+
+            <a class="text-white" href="https://moyon-xavier.github.io/siteWeb/">moyon-xavier.github.io/siteWeb</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 </body>
 
