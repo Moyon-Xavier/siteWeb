@@ -170,13 +170,15 @@ body {
 
 
 .inlineCapacity {
-    display: grid;
+    display: flex;
     width: 96%;
     height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 
-    grid-template-columns: 50% 50%;
-    gap: 1%;
-    padding: 2%;
 
 }
 
