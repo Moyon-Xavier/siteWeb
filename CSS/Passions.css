@@ -10,6 +10,10 @@
 
 }
 
+iframe {
+    width: 90%;
+}
+
 .Group {
     display: flex;
     flex-direction: row;
@@ -1212,6 +1216,7 @@
 
 
 @media only screen and (max-width: 800px) {
+
 
     .Group {
         display: flex;

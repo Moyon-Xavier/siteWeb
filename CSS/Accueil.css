@@ -27,10 +27,11 @@ ul {
 }
 
 .AboutMeHead {
-    width: 98%;
+    width: 100%;
     margin: 0%;
-    padding: 1%;
+    padding: 0%;
     background-color: #171639;
+    background-color: #ffffff;
     text-align: center;
     color: #3c8bbb;
 }
