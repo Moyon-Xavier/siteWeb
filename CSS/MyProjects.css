@@ -160,12 +160,12 @@ body {
 
 .exemple ul {
 
-    list-style-type: none;
+    list-style-type: disclosure-closed;
     padding: 1%;
-
-
-
+    text-align: start;
+    justify-content: center;
 }
+
 
 
 
@@ -176,9 +176,15 @@ body {
     padding-top: 5%;
     padding-bottom: 5%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
+    text-align-last: start;
 
+
+}
+
+.inlineCapacity h4 {
+    text-align: center;
 
 }
 
@@ -194,11 +200,11 @@ body {
 
 
 
-.exemple:hover {
+/*.exemple:hover {
     animation-name: ClickOnExemple;
     animation-duration: 3s;
     animation-fill-mode: both;
-}
+}*/
 
 
 
@@ -321,6 +327,9 @@ body {
 
 
         grid-template-columns: 100%;
+        text-align: center;
+        justify-content: center;
+
     }
 
     .navi {
