@@ -9,6 +9,7 @@
     padding: 1%;
 
 
+
 }
 
 body {
@@ -63,6 +64,10 @@ body {
     align-self: center;
 
 
+}
+
+.inline p {
+    text-align: justify;
 }
 
 .header {
@@ -322,6 +327,7 @@ body {
         padding: 10%;
 
     }
+
 
     .inlineCapacity {
 
