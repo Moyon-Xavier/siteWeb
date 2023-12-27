@@ -52,6 +52,26 @@ body {
 
 }
 
+#upBtn {
+
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 10;
+    width: 8%;
+    height: 8%;
+
+
+
+}
+
+.UPText {
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+}
+
 
 
 
@@ -305,6 +325,15 @@ body {
 
 
 @media only screen and (max-width: 800px) {
+    #upBtn {
+
+
+        width: 20%;
+        height: 8%;
+
+
+
+    }
 
     * p {
         font-size: medium;
