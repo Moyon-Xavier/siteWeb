@@ -213,18 +213,16 @@ body {
 
 }
 
-/*.Competences{
+
+
+
+
+.PointsForts {
     grid-column: 1/span 1;
-    
+
 }
 
-.PointsForts{
-    grid-column: 1/span 1;
-    
-}*/
-
-
-
+*/
 /*.exemple:hover {
     animation-name: ClickOnExemple;
     animation-duration: 3s;
@@ -352,6 +350,9 @@ body {
 
     .inline>img {
         width: 70%;
+        max-width: 300px;
+        max-height: 300px;
+
         height: 70%;
         padding: 10%;
 
