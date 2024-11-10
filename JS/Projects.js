@@ -30,6 +30,68 @@ async function getPeriod() {
 
 getPeriod();
 getProject();
+
+function addElementToListProject(currentContainer,element){
+    currentContainer.getElementsByClassName("listAllPeriodProject")[0].innerHTML+=`
+                
+                            <a href="#prono${element.prono}">${element.projectName}</a>
+                                               `    
+      
+}
+
+function getElementsInGoodFormat(element){
+    return `<section class="projectContainer" id="prono${element.prono}">
+                <h3 class="header">${element.projectName}</h3>
+                <article class="inline">
+                    <img src="${element.imageURL}" alt="Projets401402 Photo">
+                    <p> 
+                        ${element.description}
+                    </p>
+                </article>
+                <article class="inlineCapacity">
+                    <section class="exemple Competences">
+                        <h4>Compétences : </h4>
+                        <ul>
+                            <li>Node.Js et Socket.io</li>
+                            <li>Javascript</li>
+                            <li>TDD</li>
+                            <li>Git</li>
+                            <li>HTML & CSS</li>
+                            <li>Travail en équipe (Avec Issue Git)</li>
+                            <li>Répartition des tâches (Avec Issue Git et Milestone)</li>
+                            <li>Estimation du temps de travail (Avec Issue Git)</li>
+    
+    
+                        </ul>
+                    </section>
+    
+                </article>
+                <article>
+                    <a class="gitLink" href="https://github.com/Moyon-Xavier/BreakingKart" target="_blank">Lien du projet
+                        git</a>
+                </article>
+                <!--<article>
+    
+                    <a class="gitLink" target="_blank"
+                        href="https://drive.google.com/drive/folders/1yYfoV1HJpT0m1sm40zcvDDPPsZupidZf?usp=sharing">Livrable
+                        non lié á l'informatique</a>
+    
+                </article>
+                <article>
+                        <h4>Vidéo muette de presentation de notre jeu (Partie communication)</h4>
+    
+                        <div class="youtube">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/tzP7FwhkKw8?si=81FknygJRzN7szda"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+    
+                        </div>
+                    </article>-->
+    
+            </section>`
+}
 async function createProject(){
     
     var periodContainer = document.getElementById("periodContainer");
@@ -45,12 +107,12 @@ async function createProject(){
                 console.log(currentPeriodContainer)
                 console.log("Create");
             }
+            addElementToListProject(currentPeriodContainer,element);
             
-            currentPeriodContainer.getElementsByClassName("listAllPeriodProject")[0].innerHTML+=`
-                
-                            <a href="#prono${element.prono}">${element.projectName}</a>
-                                               `    
-        });
+            currentPeriodContainer.innerHTML+=getElementsInGoodFormat(element);
+        }
+            
+            );
     
     
 }
@@ -68,9 +130,6 @@ async function createYearSection(){
                     <aside class="gridItem SelectButP">
                     <ul>
                         <li class="listAllPeriodProject">
-                            <!--<a href="#402">Projet 4A.02 : Developpement d'une application complexe</a>
-                            <a href="#401">Projet 4A.01 : Developpement d'une API REST</a>
-                            <a href="#301302">Projet 3.01-02 : Chasse au monstre</a>-->
                         </li>
                     </ul>
     
