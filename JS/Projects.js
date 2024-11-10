@@ -39,6 +39,12 @@ function addElementToListProject(currentContainer,element){
       
 }
 
+function getAllListOfAllSkill(element){
+    var str =``;
+    element.requirements.forEach(req=>{str+=`<li>${req.title}</li>`})
+    return str;
+}
+
 function getElementsInGoodFormat(element){
     return `<section class="projectContainer" id="prono${element.prono}">
                 <h3 class="header">${element.projectName}</h3>
@@ -52,15 +58,7 @@ function getElementsInGoodFormat(element){
                     <section class="exemple Competences">
                         <h4>Compétences : </h4>
                         <ul>
-                            <li>Node.Js et Socket.io</li>
-                            <li>Javascript</li>
-                            <li>TDD</li>
-                            <li>Git</li>
-                            <li>HTML & CSS</li>
-                            <li>Travail en équipe (Avec Issue Git)</li>
-                            <li>Répartition des tâches (Avec Issue Git et Milestone)</li>
-                            <li>Estimation du temps de travail (Avec Issue Git)</li>
-    
+                            ${getAllListOfAllSkill(element)}
     
                         </ul>
                     </section>
