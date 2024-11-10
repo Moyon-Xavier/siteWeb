@@ -41,10 +41,36 @@ function addElementToListProject(currentContainer,element){
 
 function getAllListOfAllSkill(element){
     var str =``;
+    
     element.requirements.forEach(req=>{str+=`<li>${req.title}</li>`})
     return str;
 }
+function getAllYtbIframegetAllLink(element){
+    var str =``;
+    console.log(element)
+    if(element.ytbLink==null || element.ytbLink==undefined ){
+        return '';
+    }
 
+    element.ytbLink.forEach(link=>{str+=` <h4>${link.title}</h4>
+    
+                        <div class="youtube"><iframe width="560" height="315" src=${link.iframe}" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe></div>`})
+   return str;
+}
+
+function getAllLink(element){
+    var str =``;
+    if(element.link==null || element.link==undefined ){
+        console.log(element.link+"==null");
+        return '';
+    }
+    element.link.forEach(link=>{str+=`<a class="gitLink" href="${link.lien}" target="_blank">${link.title}</a>`})
+    console.log("not null : "+ str);
+    return str;
+
+}   
 function getElementsInGoodFormat(element){
     return `<section class="projectContainer" id="prono${element.prono}">
                 <h3 class="header">${element.projectName}</h3>
@@ -64,29 +90,13 @@ function getElementsInGoodFormat(element){
                     </section>
     
                 </article>
-                <article>
-                    <a class="gitLink" href="https://github.com/Moyon-Xavier/BreakingKart" target="_blank">Lien du projet
-                        git</a>
-                </article>
-                <!--<article>
-    
-                    <a class="gitLink" target="_blank"
-                        href="https://drive.google.com/drive/folders/1yYfoV1HJpT0m1sm40zcvDDPPsZupidZf?usp=sharing">Livrable
-                        non lié á l'informatique</a>
-    
+                
+                <article class="listLink">
+                    ${getAllLink(element)}
                 </article>
                 <article>
-                        <h4>Vidéo muette de presentation de notre jeu (Partie communication)</h4>
-    
-                        <div class="youtube">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/tzP7FwhkKw8?si=81FknygJRzN7szda"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-    
-                        </div>
-                    </article>-->
+                ${getAllYtbIframegetAllLink(element)}
+                    </article>-
     
             </section>`
 }
