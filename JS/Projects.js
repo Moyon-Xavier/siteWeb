@@ -45,6 +45,40 @@ function getAllListOfAllSkill(element){
     element.requirements.forEach(req=>{str+=`<li>${req.title}</li>`})
     return str;
 }
+
+function getId(url) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    console.log("math " + match)
+    console.log("math0 " + match[0])
+    console.log("math1 " + match[1])
+    console.log("math2 " + match[2])
+    console.log("math3 " + match[3])
+   
+    if (match && match[2].length == 11) {
+        return match[2];
+    
+    }else {
+        var regExp = /^.*(www.youtube.com\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+        var match = url.match(regExp);
+        console.log("math " + match)
+        console.log("math0 " + match[0])
+        console.log("math1 " + match[1])
+        console.log("math2 " + match[2])
+        console.log("math3 " + match[3])
+        if (match && match[2].length == 11) {
+          return match[2];
+    
+       // https://www.youtube.com/watch?v=bXrRq79nPlM
+        } else {
+            return 'error';
+        }
+        }
+}
+
+/**function replaceYTBUrl(ytUrl){
+    return ytUrl.replace('/watch?v=', '/embed/');
+}**/
 function getAllYtbIframegetAllLink(element){
     var str =``;
     console.log(element)
@@ -54,9 +88,7 @@ function getAllYtbIframegetAllLink(element){
 
     element.ytbLink.forEach(link=>{str+=` <h4>${link.title}</h4>
     
-                        <div class="youtube"><iframe width="560" height="315" src=${link.iframe}" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></div>`})
+                        <div class="youtube"><iframe src="https://www.youtube.com/embed/${getId(link.iframe)}" frameborder="0" allowfullscreen></iframe></div>`})
    return str;
 }
 
