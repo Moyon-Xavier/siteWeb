@@ -49,11 +49,7 @@ function getAllListOfAllSkill(element){
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     var match = url.match(regExp);
-    console.log("math " + match)
-    console.log("math0 " + match[0])
-    console.log("math1 " + match[1])
-    console.log("math2 " + match[2])
-    console.log("math3 " + match[3])
+    
    
     if (match && match[2].length == 11) {
         return match[2];
@@ -61,11 +57,7 @@ function getId(url) {
     }else {
         var regExp = /^.*(www.youtube.com\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
         var match = url.match(regExp);
-        console.log("math " + match)
-        console.log("math0 " + match[0])
-        console.log("math1 " + match[1])
-        console.log("math2 " + match[2])
-        console.log("math3 " + match[3])
+        
         if (match && match[2].length == 11) {
           return match[2];
     
