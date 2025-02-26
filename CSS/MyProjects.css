@@ -97,9 +97,11 @@ body {
 
 
 .inline>img {
-    width: 40%;
-    height: 50%;
+    height: 100%;
     padding: 5%;
+    min-width: 400px;
+    min-height: 350px;
+    max-width: 100%;
 
 }
 
