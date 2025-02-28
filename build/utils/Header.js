@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+export default function Header() {
+    return (_jsx(_Fragment, { children: _jsxs("header", { className: "Selection", children: [_jsxs("section", { className: "MenuSelect", children: [_jsx("img", { src: "./Photos/Header/MenuBar.jpg", alt: "Menu" }), _jsxs("aside", { className: "HiddenMenu", children: [_jsx("a", { href: "./projets.html", children: "Mes Projets" }), _jsx("a", { href: "./Parcours.html", children: "Mon parcours" }), _jsx("a", { href: "./passions.html", children: "Mes Passions" })] })] }), _jsx("h1", { children: "Xavier Moyon " }), _jsx("a", { href: "PDF/CV/XavierMoyon_CV.pdf", download: "CV-Xavier-Moyon.pdf", target: "_blank", children: _jsx("button", { type: "button", className: "btn btn-outline-light", children: "T\u00E9l\u00E9charger CV" }) })] }) }));
+}
