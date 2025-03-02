@@ -1,6 +1,5 @@
 import { createRoot } from "react-dom/client";
 import Header from "./utils/Header";
-import Main from "./Main/Main";
 import Footer from "./utils/Footer";
 import { BrowserRouter } from 'react-router';
 import Navigator from "./Navigator";
